@@ -1,6 +1,13 @@
 /*
-Patterns name : 
+Patterns name : triangle
 Pattern :
+> Enter a number: 5
+>
+*
+**
+***
+****
+*****
 
 */
 
@@ -19,10 +26,11 @@ int main() {
     // the logic
 
     for (int x = 1; x <= number; x++) {
-        for (int y = 1; y <= number; y++) {
+        for (int y = 1; y <= x; y++) {
             cout << "*";
         }
         cout << endl;
+    }
     
     return 0;
 }
