@@ -1,6 +1,13 @@
 /*
-Patterns name : 
+Patterns name : reverse triangle 
 Pattern :
+> Enter a number : 5
+>
+*****
+****
+***
+**
+*
 
 */
 
@@ -18,8 +25,8 @@ int main() {
 
     // the logic
 
-    for (int x = 1; x <= number; x++) {
-        for (int y = 1; y <= number; y++) {
+    for (int x = 0; x < number; x++) {
+        for (int y = 1; y <= (number - x); y++) {
             cout << "*";
         }
         cout << endl;

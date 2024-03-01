@@ -1,7 +1,13 @@
 /*
-Patterns name : 
+Patterns name : RTF Triangle - Reversed
 Pattern :
-
+>Enter a number : 5
+>
+*****
+ ****
+  ***
+   **
+    *
 */
 
 #include <iostream>
@@ -19,7 +25,12 @@ int main() {
     // the logic
 
     for (int x = 1; x <= number; x++) {
-        for (int y = 1; y <= number; y++) {
+        // to print the space
+        for (int y = 1; y < x; y++) {
+            cout << " ";
+        }
+        // to print the asterisk 
+        for (int y = 1; y <= (number - x + 1); y++) {
             cout << "*";
         }
         cout << endl;
